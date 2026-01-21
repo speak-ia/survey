@@ -176,7 +176,7 @@ export default function SurveyPage() {
             Merci pour votre honnêteté
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Vos retours m'aident à m'améliorer.
+            Vos retours m&apos;aident à m&apos;améliorer.
           </p>
         </div>
       </div>
@@ -210,7 +210,7 @@ export default function SurveyPage() {
         {/* Header du sondage */}
         <div className="text-center mb-8 space-y-4">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-            Sondage d'auto-évaluation
+            Sondage d&apos;auto-évaluation
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Aidez-moi à grandir en partageant des retours honnêtes et constructifs. Ce sondage est 100% anonyme.
@@ -252,7 +252,7 @@ export default function SurveyPage() {
               />
 
               <Textarea
-                label="Dans quels domaines techniques devrais-je m'améliorer ?"
+                label="Dans quels domaines techniques devrais-je m&apos;améliorer ?"
                 value={formData.technicalImprovements}
                 onChange={(e) => updateField('technicalImprovements', e.target.value)}
                 placeholder="Vos suggestions..."
@@ -298,7 +298,7 @@ export default function SurveyPage() {
               />
 
               <SelectOption
-                label="Est-ce que j'écoute bien les autres ?"
+                label="Est-ce que j&apos;écoute bien les autres ?"
                 options={['Oui', 'Non', 'Parfois']}
                 value={formData.listeningAbility}
                 onChange={(value) => updateField('listeningAbility', value)}
@@ -317,7 +317,7 @@ export default function SurveyPage() {
           {currentSection === 3 && (
             <section className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 md:p-8 space-y-6 transition-all duration-300">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                4. Personnalité et État d'Esprit
+                4. Personnalité et État d&apos;Esprit
               </h2>
               
               <CheckboxGroup
@@ -343,7 +343,7 @@ export default function SurveyPage() {
                 5. Traits de Personnalité (Évaluation Honnête)
               </h2>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                Soyez honnête, cela m'aide vraiment à m'améliorer. 1 = Pas du tout, 5 = Très
+                Soyez honnête, cela m&apos;aide vraiment à m&apos;améliorer. 1 = Pas du tout, 5 = Très
               </p>
               
               <Rating
@@ -401,7 +401,7 @@ export default function SurveyPage() {
           {currentSection === 5 && (
             <section className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 md:p-8 space-y-6 transition-all duration-300">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                6. Qualité d'Enseignement
+                6. Qualité d&apos;Enseignement
               </h2>
               
               <SelectOption
@@ -428,14 +428,14 @@ export default function SurveyPage() {
                   />
 
                   <Rating
-                    label="Comment évaluez-vous ma pédagogie (méthode d'enseignement) ?"
+                    label="Comment évaluez-vous ma pédagogie (méthode d&apos;enseignement) ?"
                     value={formData.pedagogyQuality}
                     onChange={(value) => updateField('pedagogyQuality', value)}
                     required
                   />
 
                   <Textarea
-                    label="Comment puis-je améliorer ma façon d'enseigner ?"
+                    label="Comment puis-je améliorer ma façon d&apos;enseigner ?"
                     value={formData.teachingImprovements}
                     onChange={(e) => updateField('teachingImprovements', e.target.value)}
                     placeholder="Vos suggestions critiques et constructives..."
@@ -494,7 +494,7 @@ export default function SurveyPage() {
               </div>
               
               <Textarea
-                label="Retour critique général - Dites-moi tout ce qui ne va pas (c'est ce qui m'aide le plus)"
+                label="Retour critique général - Dites-moi tout ce qui ne va pas (c&apos;est ce qui m&apos;aide le plus)"
                 value={formData.criticalFeedback}
                 onChange={(e) => updateField('criticalFeedback', e.target.value)}
                 placeholder="Soyez brutalement honnête. Qu'est-ce qui vous dérange chez moi ? Qu'est-ce que je fais mal ? Comment puis-je être meilleur ?"
